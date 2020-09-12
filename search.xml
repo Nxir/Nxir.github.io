@@ -7,6 +7,9 @@
             <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
           </div>
 
+<h2 id="博客地址"><a href="#博客地址" class="headerlink" title="博客地址"></a>博客地址</h2><p><a href="https://nxir.github.io/">Github 链接</a>(国内速度慢)</p>
+<p><a href="https://coding-pages-bucket-3473968-7947127-539-310661-1303164992.cos-website.ap-hongkong.myqcloud.com/">Coding 链接</a>(速度快,需要自定义域名)</p>
+<p><a href="https://nxir.gitee.io/">Gitee(码云)链接</a>(速度快,非会员不支持自动部署更新)</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://hexo.io/zh-cn/">中文官网</a></p>
 <p><a href="https://www.bilibili.com/video/BV1dt4y1Q7UE">快速搭建并自动化部署到 Github</a></p>
 <p><a href="https://github.com/search?o=desc&p=1&q=hexo-theme&s=stars&type=Repositories">Github 上的 Hexo 主题</a></p>
