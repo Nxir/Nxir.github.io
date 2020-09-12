@@ -14,6 +14,12 @@
 <p><a href="https://valine.js.org/">使用 Valine 接入评论</a></p>
 <p><a href="https://github.com/cwxyz007/vscode-hexo-utils">vscode-hexo-utils</a></p>
 <p><a href="https://juejin.im/post/6844904144013099022">部署到码云和 Coding</a></p>
+<blockquote>
+<p>coding 需要实名认证,自定义域名</p>
+</blockquote>
+<blockquote>
+<p>码云需要每次提交后手动部署更新 Gitee Page</p>
+</blockquote>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
