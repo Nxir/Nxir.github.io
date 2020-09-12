@@ -19,12 +19,9 @@
       </tags>
   </entry>
   <entry>
-    <title>学习路线</title>
-    <url>/2020/09/11/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
-    <content><![CDATA[<h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p>Laravel 7.0<br>Laravel Valet<br>Laravel Telescope<br>Laravel Clockwork<br>Laravel Sanctum<br>Laravel Horizon<br>优化 VSCODE 配置与插件<br>Git Rebase 操作<br>模板化 jsconfig<br>CSS Grid 布局<br>Less<br>Vue cli<br>Webpack 4<br>ES 特性 Pomise Async/Await<br>了解 Lodash<br>复习 Vue2<br>Vue 响应式原理<br>Bootsrap Icons</p>
-<details><summary>Vue3</summary>
-
-<ul>
+    <title>学习笔记 - Vue3</title>
+    <url>/2020/09/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/</url>
+    <content><![CDATA[<h2 id="随手记"><a href="#随手记" class="headerlink" title="随手记"></a>随手记</h2><ul>
 <li>provide / inject</li>
 <li>teleport</li>
 <li>ref/reactive (两种方法都会使引用变为响应式的)<ul>
@@ -56,9 +53,16 @@
 </ul>
 </li>
 </ul>
-</details>
-
-<p><a href="https://www.bilibili.com/video/BV1dt4y1Q7UE">使用 Hexo 搭建博客</a></p>
+]]></content>
+      <tags>
+        <tag>Vue3</tag>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习路线</title>
+    <url>/2020/09/11/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p>Laravel 7.0<br>Laravel Valet<br>Laravel Telescope<br>Laravel Clockwork<br>Laravel Sanctum<br>Laravel Horizon<br>优化 VSCODE 配置与插件<br>Git Rebase 操作<br>模板化 jsconfig<br>CSS Grid 布局<br>Less<br>Vue cli<br>Webpack 4<br>ES 特性 Pomise Async/Await<br>了解 Lodash<br>复习 Vue2<br>Vue 响应式原理<br>Bootsrap Icons<br>Vue3<br><a href="https://www.bilibili.com/video/BV1dt4y1Q7UE">使用 Hexo 搭建博客</a></p>
 <h2 id="正在进行"><a href="#正在进行" class="headerlink" title="正在进行"></a>正在进行</h2><p>TypeScript</p>
 <details><summary>MVVM</summary>
 

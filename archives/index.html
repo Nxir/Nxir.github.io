@@ -12,10 +12,10 @@
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -97,7 +97,7 @@
       <h1 class="site-title">杂食笔记</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">Little Bit of This, Little Bit of That</p>
+      <p class="site-subtitle" itemprop="description">Little Bit of This<br>Little Bit of That</p>
   </div>
 
   <div class="site-nav-right">
@@ -181,10 +181,100 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/myavatar.jpg">
+      <meta itemprop="name" content="0netrue">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杂食笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/12/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/" class="post-title-link" itemprop="url">学习笔记 - Vue3</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-12 21:56:20 / 修改时间：21:59:16" itemprop="dateCreated datePublished" datetime="2020-09-12T21:56:20+08:00">2020-09-12</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="随手记"><a href="#随手记" class="headerlink" title="随手记"></a>随手记</h2><ul>
+<li>provide / inject</li>
+<li>teleport</li>
+<li>ref/reactive (两种方法都会使引用变为响应式的)<ul>
+<li>ref: 由于原始类型(String,Number,Undefined,Null,Boolean)为值传递,不是引用传递,所以需要通过 ref 方法包裹原始类型,返回统一的对象属性, 通过 value 来访问</li>
+<li>reactive 展开后不再为响应式 需要使用 toRefs 方法包裹</li>
+</ul>
+</li>
+<li>watchEffect<ul>
+<li>watchEffect 中有使用到的值发生变化时,watchEffect 方法将被调用</li>
+<li>可以定义多个 watchEffect 方法,分别处理不同的逻辑</li>
+<li>watchEffect 返回一个方法 调用可停止 watchEffect</li>
+</ul>
+</li>
+<li>Composition Api<ul>
+<li>超大项目时使用</li>
+<li>在 setup 中定义<ul>
+<li>setup 方法在组件创建前执行,所以没有 this 属性,不能访问 prop,computed,mothod (可以访问 prop, attr, slots, emit)</li>
+<li>接受参数 props 和 context<ul>
+<li>props 就是 props 属性的引用</li>
+<li>context 对象暴露组件属性 context.attrs, context.emit, context.slots<ul>
+<li>context 非响应式属性,所以可以使用结构写法 setup(props, { attrs, slots, emit }) { … }</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>setup 的返回值将暴露给组件的其他部分(计算属性,方法,声明周期,模板组件等等)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/12/Hello%20Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="image" content="/images/myavatar.jpg">
       <meta itemprop="name" content="0netrue">
       <meta itemprop="description" content="">
     </span>
@@ -252,7 +342,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/11/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="image" content="/images/myavatar.jpg">
       <meta itemprop="name" content="0netrue">
       <meta itemprop="description" content="">
     </span>
@@ -280,7 +370,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-12 21:10:20" itemprop="dateModified" datetime="2020-09-12T21:10:20+08:00">2020-09-12</time>
+                <time title="修改时间：2020-09-12 21:59:59" itemprop="dateModified" datetime="2020-09-12T21:59:59+08:00">2020-09-12</time>
               </span>
 
           
@@ -294,44 +384,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p>Laravel 7.0<br>Laravel Valet<br>Laravel Telescope<br>Laravel Clockwork<br>Laravel Sanctum<br>Laravel Horizon<br>优化 VSCODE 配置与插件<br>Git Rebase 操作<br>模板化 jsconfig<br>CSS Grid 布局<br>Less<br>Vue cli<br>Webpack 4<br>ES 特性 Pomise Async/Await<br>了解 Lodash<br>复习 Vue2<br>Vue 响应式原理<br>Bootsrap Icons</p>
-<details><summary>Vue3</summary>
-
-<ul>
-<li>provide / inject</li>
-<li>teleport</li>
-<li>ref/reactive (两种方法都会使引用变为响应式的)<ul>
-<li>ref: 由于原始类型(String,Number,Undefined,Null,Boolean)为值传递,不是引用传递,所以需要通过 ref 方法包裹原始类型,返回统一的对象属性, 通过 value 来访问</li>
-<li>reactive 展开后不再为响应式 需要使用 toRefs 方法包裹</li>
-</ul>
-</li>
-<li>watchEffect<ul>
-<li>watchEffect 中有使用到的值发生变化时,watchEffect 方法将被调用</li>
-<li>可以定义多个 watchEffect 方法,分别处理不同的逻辑</li>
-<li>watchEffect 返回一个方法 调用可停止 watchEffect</li>
-</ul>
-</li>
-<li>Composition Api<ul>
-<li>超大项目时使用</li>
-<li>在 setup 中定义<ul>
-<li>setup 方法在组件创建前执行,所以没有 this 属性,不能访问 prop,computed,mothod (可以访问 prop, attr, slots, emit)</li>
-<li>接受参数 props 和 context<ul>
-<li>props 就是 props 属性的引用</li>
-<li>context 对象暴露组件属性 context.attrs, context.emit, context.slots<ul>
-<li>context 非响应式属性,所以可以使用结构写法 setup(props, { attrs, slots, emit }) { … }</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>setup 的返回值将暴露给组件的其他部分(计算属性,方法,声明周期,模板组件等等)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</details>
-
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dt4y1Q7UE">使用 Hexo 搭建博客</a></p>
+          <h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p>Laravel 7.0<br>Laravel Valet<br>Laravel Telescope<br>Laravel Clockwork<br>Laravel Sanctum<br>Laravel Horizon<br>优化 VSCODE 配置与插件<br>Git Rebase 操作<br>模板化 jsconfig<br>CSS Grid 布局<br>Less<br>Vue cli<br>Webpack 4<br>ES 特性 Pomise Async/Await<br>了解 Lodash<br>复习 Vue2<br>Vue 响应式原理<br>Bootsrap Icons<br>Vue3<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dt4y1Q7UE">使用 Hexo 搭建博客</a></p>
 <h2 id="正在进行"><a href="#正在进行" class="headerlink" title="正在进行"></a>正在进行</h2><p>TypeScript</p>
 <details><summary>MVVM</summary>
 
@@ -439,7 +492,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="0netrue"
-      src="/uploads/avatar.jpg">
+      src="/images/myavatar.jpg">
   <p class="site-author-name" itemprop="name">0netrue</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -448,7 +501,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -506,30 +559,30 @@
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
+<script src="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
+<script src="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js/motion.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js/schemes/pisces.js"></script>
 
 
-
-
-  
+<script src="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js/next-boot.js"></script>
 
 
 
 
   
-<script src="/js/local-search.js"></script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js/local-search.js"></script>
 
 
 
