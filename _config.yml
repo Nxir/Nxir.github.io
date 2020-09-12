@@ -114,3 +114,7 @@ search:
     field: post
     content: true
     format: html
+
+lazyload:
+    enable: true
+    onlypost: false
