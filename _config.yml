@@ -4,7 +4,7 @@
 
 # Site
 title: 杂食笔记
-subtitle: ''
+subtitle: 'Little Bit of This, Little Bit of That'
 description: ''
 keywords:
 author: 0netrue
@@ -25,7 +25,8 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+# archive_dir: archives
+archive_dir: /
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -62,7 +63,8 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-    path: ''
+    # path: ''
+    path: archives
     per_page: 10
     order_by: -date
 
@@ -98,7 +100,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,3 +108,9 @@ deploy:
     type: git
     repo: https://github.com/Nxir/Nxir.github.io.git
     branch: master
+
+search:
+    path: search.xml
+    field: post
+    content: true
+    format: html
