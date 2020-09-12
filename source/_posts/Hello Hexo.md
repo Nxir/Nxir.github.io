@@ -22,3 +22,5 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 [使用 Valine 接入评论](https://valine.js.org/)
 
 [vscode-hexo-utils](https://github.com/cwxyz007/vscode-hexo-utils)
+
+[部署到码云和 Coding](https://juejin.im/post/6844904144013099022)
