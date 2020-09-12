@@ -160,7 +160,7 @@ sidebar:
 avatar:
     # Replace the default image and set the url here.
     # url: #/images/avatar.gif
-    url: /uploads/avatar.jpg
+    url: /images/myavatar.jpg
     # If true, the avatar will be dispalyed in circle.
     rounded: true
     # If true, the avatar will be rotated with the cursor.
@@ -865,13 +865,13 @@ vendors:
     _internal: lib
 
     # Internal version: 3.1.0
-    # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
-    anime:
+    anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
+    # anime:
 
     # Internal version: 5.13.0
-    # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+    fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
     # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
-    fontawesome:
+    # fontawesome:
 
     # MathJax
     # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -887,8 +887,8 @@ vendors:
     copy_tex_css:
 
     # Internal version: 0.2.8
-    # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
-    pjax:
+    pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+    # pjax:
 
     # FancyBox
     # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
@@ -945,12 +945,12 @@ vendors:
     mermaid:
 
     # Internal version: 1.2.1
-    # velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
+    velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
     # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
-    # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
+    velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
     # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-    velocity:
-    velocity_ui:
+    # velocity:
+    # velocity_ui:
 
     # Internal version: 1.0.2
     # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
@@ -975,6 +975,9 @@ vendors:
     canvas_ribbon:
 
 # Assets
-css: css
-js: js
-images: images
+# css: css
+css: //cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/css
+# js: js
+js: //cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/js
+# images: images
+images: //cdn.jsdelivr.net/gh/nxir/nxir.github.io@latest/images
