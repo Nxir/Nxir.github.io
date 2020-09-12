@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello Hexo</title>
-    <url>/2020/09/12/Hello%20Hexo/</url>
+    <url>/2020/09/13/Hello%20Hexo/</url>
     <content><![CDATA[<div class="note default no-icon">
             <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
           </div>
@@ -13,6 +13,7 @@
 <p>推荐主题 <a href="https://theme-next.js.org/">Next</a></p>
 <p><a href="https://valine.js.org/">使用 Valine 接入评论</a></p>
 <p><a href="https://github.com/cwxyz007/vscode-hexo-utils">vscode-hexo-utils</a></p>
+<p><a href="https://juejin.im/post/6844904144013099022">部署到码云和 Coding</a></p>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
