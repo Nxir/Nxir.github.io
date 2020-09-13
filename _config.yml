@@ -107,6 +107,7 @@ theme: next
 deploy:
     type: git
     repo:
+        coding: git@e.coding.net:rooteam/nxir/blog.git
         gitee: git@gitee.com:nxir/nxir.git
         github: https://github.com/Nxir/Nxir.github.io.git
     branch: master
