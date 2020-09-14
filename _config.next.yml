@@ -44,7 +44,7 @@ custom_file_path:
     #bodyEnd: source/_data/body-end.swig
     #variable: source/_data/variables.styl
     #mixin: source/_data/mixins.styl
-    #style: source/_data/styles.styl
+    style: source/_data/styles.styl
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -75,7 +75,7 @@ footer:
         # Icon name in Font Awesome. See: https://fontawesome.com/icons
         name: fa fa-heart
         # If you want to animate the icon, set it to true.
-        animated: false
+        animated: true
         # Change the color of icon, using Hex Code.
         color: '#ff0000'
 
