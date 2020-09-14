@@ -113,7 +113,7 @@
     set_canvas_size();
     window.onresize = set_canvas_size;
     //当时鼠标位置存储，离开的时候，释放当前位置信息
-    (window.onmousemove = function (e) {
+    /* (window.onmousemove = function (e) {
         e = e || window.event;
         current_point.x = e.clientX;
         current_point.y = e.clientY;
@@ -121,7 +121,7 @@
         (window.onmouseout = function () {
             current_point.x = null;
             current_point.y = null;
-        });
+        }); */
     //随机生成config.n条线位置信息
     for (var random_points = [], i = 0; config.n > i; i++) {
         var x = random() * canvas_width, //随机位置
