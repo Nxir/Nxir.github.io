@@ -16,6 +16,8 @@
 
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -37,13 +39,13 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>杂食笔记</title>
+  <title>归档 | 杂食笔记</title>
   
 
 
@@ -127,6 +129,11 @@
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-learning-path">
+
+    <a href="/learning-path" rel="section"><i class="fa fa-download fa-fw"></i>路线</a>
+
+  </li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -175,273 +182,69 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content archive">
             
-      
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/nxir/nxir.github.io@master/images/myavatar.jpg">
-      <meta itemprop="name" content="0netrue">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杂食笔记">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/" class="post-title-link" itemprop="url">学习笔记 - Vue3</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-13 00:27:18" itemprop="dateCreated datePublished" datetime="2020-09-13T00:27:18+08:00">2020-09-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
+      </div>
 
       
-          <h2 id="随手记"><a href="#随手记" class="headerlink" title="随手记"></a>随手记</h2><ul>
-<li>provide / inject</li>
-<li>teleport</li>
-<li>ref/reactive (两种方法都会使引用变为响应式的)<ul>
-<li>ref: 由于原始类型(String,Number,Undefined,Null,Boolean)为值传递,不是引用传递,所以需要通过 ref 方法包裹原始类型,返回统一的对象属性, 通过 value 来访问</li>
-<li>reactive 展开后不再为响应式 需要使用 toRefs 方法包裹</li>
-</ul>
-</li>
-<li>watchEffect<ul>
-<li>watchEffect 中有使用到的值发生变化时,watchEffect 方法将被调用</li>
-<li>可以定义多个 watchEffect 方法,分别处理不同的逻辑</li>
-<li>watchEffect 返回一个方法 调用可停止 watchEffect</li>
-</ul>
-</li>
-<li>Composition Api<ul>
-<li>超大项目时使用</li>
-<li>在 setup 中定义<ul>
-<li>setup 方法在组件创建前执行,所以没有 this 属性,不能访问 prop,computed,mothod (可以访问 prop, attr, slots, emit)</li>
-<li>接受参数 props 和 context<ul>
-<li>props 就是 props 属性的引用</li>
-<li>context 对象暴露组件属性 context.attrs, context.emit, context.slots<ul>
-<li>context 非响应式属性,所以可以使用结构写法 setup(props, { attrs, slots, emit }) { … }</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>setup 的返回值将暴露给组件的其他部分(计算属性,方法,声明周期,模板组件等等)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-      
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-09-13T00:27:18+08:00"
+              content="2020-09-13">
+          09-13
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/09/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/" itemprop="url">
+            <span itemprop="name">学习笔记 - Vue3</span>
+          </a>
+      </div>
+
+    </header>
   </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/13/Hello%20Hexo/">
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/nxir/nxir.github.io@master/images/myavatar.jpg">
-      <meta itemprop="name" content="0netrue">
-      <meta itemprop="description" content="">
-    </span>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-09-13T00:27:18+08:00"
+              content="2020-09-13">
+          09-13
+        </time>
+      </div>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杂食笔记">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/13/Hello%20Hexo/" class="post-title-link" itemprop="url">Hello Hexo 😘</a>
-        </h2>
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/09/13/Hello%20Hexo/" itemprop="url">
+            <span itemprop="name">Hello Hexo 😘</span>
+          </a>
+      </div>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+    </header>
+  </article>
 
-              <time title="创建时间：2020-09-13 00:27:18 / 修改时间：02:07:12" itemprop="dateCreated datePublished" datetime="2020-09-13T00:27:18+08:00">2020-09-13</time>
-            </span>
 
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <div class="note default no-icon">
-            <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-          </div>
-
-<h2 id="博客地址"><a href="#博客地址" class="headerlink" title="博客地址"></a>博客地址</h2><p><a target="_blank" rel="noopener" href="https://nxir.github.io/">Github 链接</a>(国内速度慢)</p>
-<p><a target="_blank" rel="noopener" href="https://coding-pages-bucket-3473968-7947127-539-310661-1303164992.cos-website.ap-hongkong.myqcloud.com/">Coding 链接</a>(速度快,需要自定义域名)</p>
-<p><a target="_blank" rel="noopener" href="https://nxir.gitee.io/">Gitee(码云)链接</a>(速度快,非会员不支持自动部署更新)</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">中文官网</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dt4y1Q7UE">快速搭建并自动化部署到 Github</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/search?o=desc&p=1&q=hexo-theme&s=stars&type=Repositories">Github 上的 Hexo 主题</a></p>
-<p>推荐主题 <a target="_blank" rel="noopener" href="https://theme-next.js.org/">Next</a></p>
-<p><a target="_blank" rel="noopener" href="https://valine.js.org/">使用 Valine 接入评论</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/cwxyz007/vscode-hexo-utils">vscode-hexo-utils</a></p>
-<p><a target="_blank" rel="noopener" href="https://juejin.im/post/6844904144013099022">部署到码云和 Coding</a></p>
-<blockquote>
-<p>coding 需要实名认证,自定义域名</p>
-</blockquote>
-<blockquote>
-<p>码云需要每次提交后手动部署更新 Gitee Page</p>
-</blockquote>
-
-      
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+  </div>
   
   
   
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/11/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/nxir/nxir.github.io@master/images/myavatar.jpg">
-      <meta itemprop="name" content="0netrue">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杂食笔记">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/11/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" class="post-title-link" itemprop="url">学习路线</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-11 12:00:00" itemprop="dateCreated datePublished" datetime="2020-09-11T12:00:00+08:00">2020-09-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-13 00:27:18" itemprop="dateModified" datetime="2020-09-13T00:27:18+08:00">2020-09-13</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p>Laravel 7.0<br>Laravel Valet<br>Laravel Telescope<br>Laravel Clockwork<br>Laravel Sanctum<br>Laravel Horizon<br>优化 VSCODE 配置与插件<br>Git Rebase 操作<br>模板化 jsconfig<br>CSS Grid 布局<br>Less<br>Vue cli<br>Webpack 4<br>ES 特性 Pomise Async/Await<br>了解 Lodash<br>复习 Vue2<br>Vue 响应式原理<br>Bootsrap Icons<br>Vue3<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dt4y1Q7UE">使用 Hexo 搭建博客</a></p>
-<h2 id="正在进行"><a href="#正在进行" class="headerlink" title="正在进行"></a>正在进行</h2><p>TypeScript</p>
-<details><summary>MVVM</summary>
-
-<ul>
-<li>VM(编译器,响应式数据,渲染器)</li>
-<li>编译器(AST 抽象语法树 -&gt; Transfer -&gt; Generate)<ul>
-<li>AST Parser 通过正则将模板字符串解析并转换为抽象语法树,即节点(JavaScript Object),包含标签名,标签属性 内容,子节点</li>
-<li>Transfer 将抽象语法树转为具象语法树(因为每个框架会有独有的标签属性,需要单独提出解析 提取,更细致的表现为在语法树中, 例如 Vue 中的指令)</li>
-<li>Generate 依据具象语法树生成渲染函数的逻辑代码</li>
-</ul>
-</li>
-</ul>
-</details>
-
-<details><summary>JS运行原理</summary>
-
-<p>动态类型语言在编码时提供的信息太少了,让编译器无法在运行前知道变量的类型,只有在运行期间才能确定各个变量的类型,这就导致 JS 无法在运行前编译出更加快速的低级语言的代码,也就是机器代码(Machine Code)</p>
-<p>Just In Time(JIT)在运行时生成机器代码,而不是提前生成.在运行阶段收集类型信息,然后根据信息编译机器码,之后再运行代码时直接使用机器码</p>
-<p>Ahead Of Time(AOT)在运行前提前生成好机器码</p>
-<p>JavaScript 引擎(将高级语言 JS 转为低级语言机器码)</p>
-<ul>
-<li>JS 引擎首先将 JS 源码通过 parser(解析器)解析成抽象语法树(AST)</li>
-<li>接着通过 interpreter(解释器)将 AST 编译成字节码(bytecode)</li>
-<li>字节码通过 compiler(编译器)生成 machine code(机器码)<ul>
-<li>字节码:是一种中间状态(中间码)的二进制代码(文件),这也是为什么 Java 这种语言可以跨平台的原因</li>
-<li>机器码:是电脑 CPU 直接读取运行的机器指令,运行速度最快</li>
-<li>不同平台的机器代码会有差异,所以编译器会根据当前平台(如 ARM x64)编译出不同平台的机器码,这里的机器码其实就是汇编代码</li>
-</ul>
-</li>
-</ul>
-</details>
-
-<h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><p>JavaScript Event Loop <br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1b7411N798">数据结构</a> <br><a target="_blank" rel="noopener" href="https://learngitbranching.js.org/">Learngitbranching</a> <br><a target="_blank" rel="noopener" href="http://xuesql.cn/lesson/introduction">xuesql</a> <br>Sass<br>k8s</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
 
@@ -507,6 +310,13 @@
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
