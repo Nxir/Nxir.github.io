@@ -1,31 +1,31 @@
 ---
 title: 学习路线
 date: 2020-9-11 12:00:00
-type: "learning-path"
+type: 'learning-path'
 ---
 
 ## 已完成
 
-Laravel 7.0  
-Laravel Valet  
-Laravel Telescope  
-Laravel Clockwork  
-Laravel Sanctum  
-Laravel Horizon  
-优化 VSCODE 配置与插件  
-Git Rebase 操作  
-模板化 jsconfig  
-CSS Grid 布局  
-Less  
-Vue cli  
-Webpack 4  
-ES 特性 Pomise Async/Await  
-了解 Lodash  
-复习 Vue2  
-Vue 响应式原理  
-Bootsrap Icons
-Vue3
-[使用 Hexo 搭建博客](https://www.bilibili.com/video/BV1dt4y1Q7UE)
+Laravel 7.0 /
+Laravel Valet /
+Laravel Telescope /
+Laravel Clockwork /
+Laravel Sanctum /
+Laravel Horizon /
+优化 VSCODE 配置与插件 /
+Git Rebase /
+模板化 jsconfig /
+CSS Grid 布局 /
+Less /
+Vue cli /
+Webpack 4 /
+Pomise Async&Await /
+了解 Lodash /
+Vue2(review) /
+Vue 响应式原理 /
+Bootsrap Icons /
+Vue3 {% post_link "学习笔记 - Vue3" 📝 %} /
+Hexo {% post_link "Hello Hexo" 📝 %}
 
 ## 正在进行
 
@@ -62,9 +62,9 @@ JavaScript 引擎(将高级语言 JS 转为低级语言机器码)
 
 ## 计划
 
-JavaScript Event Loop \
-[数据结构](https://www.bilibili.com/video/BV1b7411N798) \
-[Learngitbranching](https://learngitbranching.js.org) \
-[xuesql](http://xuesql.cn/lesson/introduction) \
-Sass
+JavaScript Event Loop /
+[数据结构](https://www.bilibili.com/video/BV1b7411N798) /
+[Learngitbranching](https://learngitbranching.js.org) /
+[xuesql](http://xuesql.cn/lesson/introduction) /
+Sass /
 k8s

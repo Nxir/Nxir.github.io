@@ -121,3 +121,6 @@ search:
 lazyload:
     enable: true
     onlypost: false
+
+marked:
+    gfm: false
