@@ -1,10 +1,7 @@
 ---
 title: 学习路线
 date: 2020-9-11 12:00:00
-# tags:
-# - 博客
-# - hexo
-# categories: web前端
+type: "learning-path"
 ---
 
 ## 已完成

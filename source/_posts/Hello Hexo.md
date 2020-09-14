@@ -5,9 +5,11 @@ tags:
     - Hexo
 ---
 
-{% note default no-icon %}
+{% cq %}
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-{% endnote %}
+{% endcq %}
+
+<!-- more -->
 
 ## 博客地址
 
@@ -26,6 +28,8 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 [Github 上的 Hexo 主题](https://github.com/search?o=desc&p=1&q=hexo-theme&s=stars&type=Repositories)
 
 推荐主题 [Next](https://theme-next.js.org/)
+
+[Next添加菜单页面](https://www.jianshu.com/p/3fe88ef479dd)
 
 [使用 Valine 接入评论](https://valine.js.org/)
 

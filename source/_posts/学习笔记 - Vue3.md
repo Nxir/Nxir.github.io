@@ -5,7 +5,9 @@ tags:
     - Web前端
 ---
 
-## 随手记
+{% cq %} Vue3 新特性! 就很棒! {% endcq %}
+
+<!-- more -->
 
 -   provide / inject
 -   teleport
