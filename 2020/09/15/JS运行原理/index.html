@@ -21,23 +21,24 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
+  <meta name="description" content="JS 动态类型的特性动态类型语言在编码时提供的信息太少了,让编译器无法在运行前知道变量的类型,只有在运行期间才能确定各个变量的类型,这就导致 JS 无法在运行前编译出更加快速的低级语言的代码,也就是机器代码(Machine Code)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Hexo 😘">
-<meta property="og:url" content="http://example.com/2020/09/13/Hello%20Hexo/index.html">
+<meta property="og:title" content="JS运行原理">
+<meta property="og:url" content="http://example.com/2020/09/15/JS%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="杂食笔记">
-<meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。">
+<meta property="og:description" content="JS 动态类型的特性动态类型语言在编码时提供的信息太少了,让编译器无法在运行前知道变量的类型,只有在运行期间才能确定各个变量的类型,这就导致 JS 无法在运行前编译出更加快速的低级语言的代码,也就是机器代码(Machine Code)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-12T16:27:18.650Z">
-<meta property="article:modified_time" content="2020-09-14T03:42:29.720Z">
+<meta property="article:published_time" content="2020-09-15T02:59:50.397Z">
+<meta property="article:modified_time" content="2020-09-15T04:07:32.555Z">
 <meta property="article:author" content="0netrue">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Web前端">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/09/13/Hello%20Hexo/">
+<link rel="canonical" href="http://example.com/2020/09/15/JS%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86/">
 
 
 <script id="page-configurations">
@@ -50,7 +51,7 @@
   };
 </script>
 
-  <title>Hello Hexo 😘 | 杂食笔记</title>
+  <title>JS运行原理 | 杂食笔记</title>
   
 
 
@@ -194,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/13/Hello%20Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/15/JS%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/nxir/nxir.github.io@master/images/myavatar.jpg">
@@ -207,7 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello Hexo 😘
+          JS运行原理
         </h1>
 
         <div class="post-meta">
@@ -216,16 +217,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-13 00:27:18" itemprop="dateCreated datePublished" datetime="2020-09-13T00:27:18+08:00">2020-09-13</time>
+              <time title="创建时间：2020-09-15 10:59:50 / 修改时间：12:07:32" itemprop="dateCreated datePublished" datetime="2020-09-15T10:59:50+08:00">2020-09-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 11:42:29" itemprop="dateModified" datetime="2020-09-14T11:42:29+08:00">2020-09-14</time>
-              </span>
 
           
 
@@ -238,32 +233,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
+        <h2 id="JS-动态类型的特性"><a href="#JS-动态类型的特性" class="headerlink" title="JS 动态类型的特性"></a>JS 动态类型的特性</h2><p>动态类型语言在编码时提供的信息太少了,让编译器无法在运行前知道变量的类型,只有在运行期间才能确定各个变量的类型,这就导致 JS 无法在运行前编译出更加快速的低级语言的代码,也就是机器代码(Machine Code)</p>
 <a id="more"></a>
 
-<h2 id="博客地址"><a href="#博客地址" class="headerlink" title="博客地址"></a>博客地址</h2><p><a target="_blank" rel="noopener" href="https://nxir.github.io/">Github 链接</a>(国内速度慢)</p>
-<p><a target="_blank" rel="noopener" href="https://coding-pages-bucket-3473968-7947127-539-310661-1303164992.cos-website.ap-hongkong.myqcloud.com/">Coding 链接</a>(速度快,需要自定义域名)</p>
-<p><a target="_blank" rel="noopener" href="https://nxir.gitee.io/">Gitee(码云)链接</a>(速度快,非会员不支持自动部署更新)</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">中文官网</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dt4y1Q7UE">快速搭建并自动化部署到 Github</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/search?o=desc&p=1&q=hexo-theme&s=stars&type=Repositories">Github 上的 Hexo 主题</a></p>
-<p>推荐主题 <a target="_blank" rel="noopener" href="https://theme-next.js.org/">Next</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3fe88ef479dd">Next添加菜单页面</a></p>
-<p><a target="_blank" rel="noopener" href="https://valine.js.org/">使用 Valine 接入评论</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/cwxyz007/vscode-hexo-utils">vscode-hexo-utils</a></p>
-<p><a target="_blank" rel="noopener" href="https://juejin.im/post/6844904144013099022">部署到码云和 Coding</a></p>
-<blockquote>
-<p>coding 需要实名认证,自定义域名</p>
-</blockquote>
-<blockquote>
-<p>码云需要每次提交后手动部署更新 Gitee Page</p>
-</blockquote>
+<h2 id="事件循环-amp-异步回调"><a href="#事件循环-amp-异步回调" class="headerlink" title="事件循环 &amp; 异步回调"></a>事件循环 &amp; 异步回调</h2><p>JavaScript 的执行环节是一个单线程,也就意味着 JS 环境只有一个调用栈,如果调用栈中某个函数执行需要消耗大量时间,就会导致调用栈被阻塞,无法入栈和出栈</p>
+<p>由于浏览器中页面的布局绘制和 JS 的执行是共用的同一个主线程,如果 JS 的处理迟迟不归还主线程的话,就会影响页面的渲染,导致页面卡顿</p>
+<p>优化的方法就是使用事件循环 &amp; 异步回调</p>
+<h2 id="JIT-amp-AOT"><a href="#JIT-amp-AOT" class="headerlink" title="JIT &amp; AOT"></a>JIT &amp; AOT</h2><p>Just In Time(JIT)在运行时生成机器代码,而不是提前生成.在运行阶段收集类型信息,然后根据信息编译机器码,之后再运行代码时直接使用机器码</p>
+<p>Ahead Of Time(AOT)在运行前提前生成好机器码</p>
+<h2 id="JavaScript-引擎"><a href="#JavaScript-引擎" class="headerlink" title="JavaScript 引擎"></a>JavaScript 引擎</h2><ol>
+<li><p>引擎负责将高级语言 JS 转为低级语言机器码</p>
+</li>
+<li><p>JS 引擎首先将 JS 源码通过 parser(解析器)解析成抽象语法树(AST)</p>
+</li>
+<li><p>接着通过 interpreter(解释器)将 AST 编译成字节码(bytecode)</p>
+</li>
+<li><p>字节码通过 compiler(编译器)生成 machine code(机器码)</p>
+</li>
+</ol>
+<div class="note no-icon">
+            <p>字节码:是一种中间状态(中间码)的二进制代码(文件),这也是为什么 Java 这种语言可以跨平台的原因</p><p>机器码:是电脑 CPU 直接读取运行的机器指令,运行速度最快</p><p>不同平台的机器代码会有差异,所以编译器会根据当前平台(如 ARM x64)编译出不同平台的机器码,这里的机器码其实就是汇编代码</p>
+          </div>
+
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vh411Z7QG">📹 JS 运行原理</a>
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zV411z7RX">📹 V8 引擎如何运行</a>
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13k4y1y7vU">📹 JS 调用栈</a></p>
 
     </div>
 
@@ -273,7 +267,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/Web%E5%89%8D%E7%AB%AF/" rel="tag"># Web前端</a>
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           </div>
 
         
@@ -281,10 +276,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/09/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%20-%20Vue3/" rel="next" title="学习笔记 - Vue3">
-      学习笔记 - Vue3 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/09/13/Vue3/" rel="prev" title="学习笔记 - Vue3">
+      <i class="fa fa-chevron-left"></i> 学习笔记 - Vue3
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/15/%E7%9C%9F%E5%A5%87%E5%A6%99/" rel="next" title="真奇妙">
+      真奇妙 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -344,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">博客地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS-%E5%8A%A8%E6%80%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">JS 动态类型的特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF-amp-%E5%BC%82%E6%AD%A5%E5%9B%9E%E8%B0%83"><span class="nav-number">2.</span> <span class="nav-text">事件循环 &amp; 异步回调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JIT-amp-AOT"><span class="nav-number">3.</span> <span class="nav-text">JIT &amp; AOT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-%E5%BC%95%E6%93%8E"><span class="nav-number">4.</span> <span class="nav-text">JavaScript 引擎</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">4.0.1.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -360,14 +358,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
