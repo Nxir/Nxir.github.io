@@ -45,12 +45,13 @@ VM 包含编译器,响应式数据,渲染器
 
 ## 正在进行
 
+数据结构 {% post_link 数据结构 📝%}
+
 JS 运行原理
 
 ## 计划
 
 JavaScript Event Loop /
-[数据结构](https://www.bilibili.com/video/BV1b7411N798) /
 [Learngitbranching](https://learngitbranching.js.org) /
 [xuesql](http://xuesql.cn/lesson/introduction) /
 Sass /

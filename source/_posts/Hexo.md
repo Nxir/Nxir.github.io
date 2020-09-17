@@ -29,7 +29,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 推荐主题 [Next](https://theme-next.js.org/)
 
-[Next添加菜单页面](https://www.jianshu.com/p/3fe88ef479dd)
+[Next 添加菜单页面](https://www.jianshu.com/p/3fe88ef479dd)
 
 [使用 Valine 接入评论](https://valine.js.org/)
 
