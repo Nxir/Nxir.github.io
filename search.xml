@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数据结构</title>
+    <url>/2020/09/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>数据结构 - 数据之间的关联关系</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="数据结构在学什么"><a href="#数据结构在学什么" class="headerlink" title="数据结构在学什么"></a>数据结构在学什么</h3><ul>
+<li>如何用程序代码把现实世界的问题<strong>信息化</strong></li>
+<li>如何用计算机<em>高效的</em>处理这些信息从而创造价值</li>
+</ul>
+<h3 id="数据结构的三要素"><a href="#数据结构的三要素" class="headerlink" title="数据结构的三要素"></a>数据结构的三要素</h3><h4 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h4><ul>
+<li>集合</li>
+<li>线性结构</li>
+<li>树形结构</li>
+<li>图状结构(网状结构)</li>
+</ul>
+<h4 id="物理结构-存储结构"><a href="#物理结构-存储结构" class="headerlink" title="物理结构(存储结构)"></a>物理结构(存储结构)</h4><blockquote>
+<p>如何用计算机表示数据元素的逻辑关系</p>
+</blockquote>
+<ul>
+<li><p>顺序存储</p>
+<p>把逻辑上相邻的元素存储在物理位置上也相邻的存储单元中</p>
+</li>
+<li><p>链式存储</p>
+<p>逻辑上相邻的元素在物理位置上可以不相邻,而是借助元素存储地址的<strong>指针</strong>来表示元素之间的逻辑关系</p>
+</li>
+<li><p>索引存储</p>
+<p>在存储元素信息的同时,还建立附加的索引表</p>
+</li>
+<li><p>散列存储</p>
+<p>根据元素的关键字直接计算出该元素的存储地址,又称哈希(Hash)存储</p>
+</li>
+</ul>
+<ol>
+<li>顺序存储在物理上是连续的, 其他非顺序存储则各个元素在物理上是可以离散
+的</li>
+<li>存储结构会影响存储空间分配的方便程度</li>
+<li>存储结构会影响数据运算的速度</li>
+</ol>
+<h4 id="数据的运算"><a href="#数据的运算" class="headerlink" title="数据的运算"></a>数据的运算</h4><p>施加在数据上的运算包括运算的定义和实现
+运算的定义是针对逻辑结构的,指出运算的功能.
+运算的实现是针对存储结构的,指出运算的具体操作步骤.</p>
+<h3 id="算法的时间复杂度"><a href="#算法的时间复杂度" class="headerlink" title="算法的时间复杂度"></a>算法的时间复杂度</h3><p>问题规模为 N
+只有当 N 足够大时,才会出现性能问题</p>
+<p>简化时间复杂度表达式,可以只考虑阶数高的部分
+大 O 表示”同阶”,同等数量级.即当 n 等于无穷时,二者之比为常数</p>
+<ul>
+<li>O(n)</li>
+<li>O(n²)</li>
+<li>O(n³)</li>
+</ul>
+<p>复杂度排序: 常&lt;对&lt;幂&lt;指&lt;阶</p>
+<h3 id="算法的空间规模-内存需求"><a href="#算法的空间规模-内存需求" class="headerlink" title="算法的空间规模(内存需求)"></a>算法的空间规模(内存需求)</h3><h2 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h2><p>线性表是具有<strong>相同</strong>(每个数据元素所占内存空间一样大)数据类型的 n 个数据元素的有限序列</p>
+<h3 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h3><p>用顺序存储方式实现的线性表
+<img src="https://s1.ax1x.com/2020/09/17/wfULz6.png" alt="wfULz6">
+<img src="https://s1.ax1x.com/2020/09/17/wfdWbF.png" alt="wfdWbF">
+<img src="https://s1.ax1x.com/2020/09/17/wf0Dlq.png" alt="wf0Dlq"></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.bilibili.com/video/BV1b7411N798">数据结构-王道</a>
+<a href="https://408.kimyang.cn/DataStructure/">数据结构-王道笔记</a></p>
+]]></content>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TypeScript 笔记</title>
     <url>/2020/09/16/TypeScript/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -167,7 +235,7 @@
 <p><a href="https://www.bilibili.com/video/BV1dt4y1Q7UE">快速搭建并自动化部署到 Github</a></p>
 <p><a href="https://github.com/search?o=desc&p=1&q=hexo-theme&s=stars&type=Repositories">Github 上的 Hexo 主题</a></p>
 <p>推荐主题 <a href="https://theme-next.js.org/">Next</a></p>
-<p><a href="https://www.jianshu.com/p/3fe88ef479dd">Next添加菜单页面</a></p>
+<p><a href="https://www.jianshu.com/p/3fe88ef479dd">Next 添加菜单页面</a></p>
 <p><a href="https://valine.js.org/">使用 Valine 接入评论</a></p>
 <p><a href="https://github.com/cwxyz007/vscode-hexo-utils">vscode-hexo-utils</a></p>
 <p><a href="https://juejin.im/post/6844904144013099022">部署到码云和 Coding</a></p>
