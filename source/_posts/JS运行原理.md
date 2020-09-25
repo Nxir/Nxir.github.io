@@ -19,6 +19,12 @@ JavaScript 的执行环节是一个单线程,也就意味着 JS 环境只有一�
 
 优化的方法就是使用事件循环 & 异步回调
 
+{% note no-icon %}
+[What the heck is the event loop anyway? ](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=3s)
+
+[一文带你搞懂 JavaScript 事件循环](https://juejin.im/post/6844903881663578119)
+{% endnote %}
+
 ## JIT & AOT
 
 Just In Time(JIT)在运行时生成机器代码,而不是提前生成.在运行阶段收集类型信息,然后根据信息编译机器码,之后再运行代码时直接使用机器码

@@ -27,6 +27,8 @@ Bootsrap Icons /
 Vue3 {% post_link "Vue3" 📝 %} /
 Hexo {% post_link "Hexo" 📝 %} /
 TypeScript {% post_link "TypeScript" 📝 %} /
+数据结构 {% post_link 数据结构 📝%} /
+JS 运行原理 {% post_link "JS运行原理" 📝%} /
 
 #### 片段
 
@@ -45,13 +47,10 @@ VM 包含编译器,响应式数据,渲染器
 
 ## 正在进行
 
-数据结构 {% post_link 数据结构 📝%}
-
-JS 运行原理
+[计算机网络](https://www.bilibili.com/video/BV19E411D78Q)
 
 ## 计划
 
-JavaScript Event Loop /
 [Learngitbranching](https://learngitbranching.js.org) /
 [xuesql](http://xuesql.cn/lesson/introduction) /
 Sass /
